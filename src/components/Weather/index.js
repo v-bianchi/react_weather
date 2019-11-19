@@ -1,11 +1,13 @@
 import React from 'react';
 
+import DayList from '../DayList';
+
 import { Container } from './styles';
 
 export default function Weather() {
   return (
     <Container>
-      <div>Day list</div>
+      <DayList />
       <div>Day details</div>
     </Container>
   );

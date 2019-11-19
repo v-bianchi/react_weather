@@ -10020,6 +10020,11 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+weather-icons-lite@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/weather-icons-lite/-/weather-icons-lite-1.1.0.tgz#6e6c901350276c0157f6a921cf17482f28c004e7"
+  integrity sha512-rGmWG1jU27pT+sG0JhwPvmacS2wXjo9lN+d7UZ9kUGfAUHZtt2DAFAYTHLjyZw/YsFS6Ojsv8syFm5on4npJ0g==
+
 webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
