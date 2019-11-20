@@ -14,9 +14,9 @@ export const Label = styled.p`
   color: #5c80bc;
 `;
 
-export const Icon = styled.i.attrs({
-  className: 'wi wi-darksky-clear-day',
-})`
+export const Icon = styled.i.attrs(({ description }) => ({
+  className: `wi wi-darksky-${description}`,
+}))`
   font-size: 32px;
   color: #297373;
 `;
@@ -27,8 +27,8 @@ export const Temperatures = styled.div`
   width: 100%;
 `;
 
-export const MinTemp = styled.span``;
+export const MaxTemp = styled.span``;
 
-export const MaxTemp = styled.span`
+export const MinTemp = styled.span`
   color: #5c80bc;
 `;

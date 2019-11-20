@@ -4,14 +4,12 @@ import Day from '../Day';
 
 import { Container } from './styles';
 
-export default function DayList() {
+export default function DayList({ forecast }) {
   return (
     <Container>
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-      <Day />
+      {forecast.map(dayData => (
+        <Day forecast={dayData} key={dayData.time} />
+      ))}
     </Container>
   );
 }
