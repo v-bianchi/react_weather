@@ -12,12 +12,8 @@ export default function Weather() {
   useEffect(() => {
     async function fetchData() {
       const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-      const targetUrl = `https://api.darksky.net/forecast/${process.env.REACT_APP_DARK_SKY_API_KEY}/37.8267,-122.4233?exclude=currently,minutely,hourly,alerts,flags&units=si`;
-      const {
-        data: {
-          daily: { data },
-        },
-      } = await axios.get(proxyUrl + targetUrl);
+      const targetUrl = `https://api.darksky.net/forecast/${process.env.REACT_APP_DARK_SKY_API_KEY}/45.515018,-73.585770?exclude=currently,minutely,hourly,alerts,flags&units=si`;
+      const { data } = await axios.get(proxyUrl + targetUrl);
       setDailyForecast(buildDailyForecast(data));
     }
 
@@ -26,6 +22,7 @@ export default function Weather() {
 
   return (
     <Container>
+      <h1>Weather in Montréal</h1>
       <DayList forecast={dailyForecast} />
       <div>Day details</div>
     </Container>
