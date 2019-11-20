@@ -1,4 +1,6 @@
-Just a simple weather widget using React.
+Just a simple weather widget using React and the Dark Sky API.
+
+Live demo [here](https://mtlweather.netlify.com/).
 
 TODO:
 - Add PropTypes
