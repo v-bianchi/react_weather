@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import DayList from '../DayList';
+import DayDetails from '../DayDetails';
 import buildDailyForecast from '../../utils';
 
 import { Container } from './styles';
@@ -29,7 +30,11 @@ export default function Weather() {
         setSelectedDayId={setSelectedDayId}
         selectedDayId={selectedDayId}
       />
-      <div>Day details</div>
+      {selectedDayId && (
+        <DayDetails
+          forecast={dailyForecast.find(day => day.id === selectedDayId)}
+        />
+      )}
     </Container>
   );
 }
