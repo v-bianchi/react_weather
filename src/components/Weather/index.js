@@ -35,6 +35,11 @@ export default function Weather() {
           forecast={dailyForecast.find(day => day.id === selectedDayId)}
         />
       )}
+      <footer>
+        <small>
+          <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+        </small>
+      </footer>
     </Container>
   );
 }

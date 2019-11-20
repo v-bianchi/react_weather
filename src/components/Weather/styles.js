@@ -10,6 +10,11 @@ export const Container = styled.div`
   height: 100vh;
   background: #fff;
 
+  footer a {
+    text-decoration: none;
+    color: #5c9ead;
+  }
+
   @media (min-width: 768px) {
     max-width: 668px;
     height: auto;
