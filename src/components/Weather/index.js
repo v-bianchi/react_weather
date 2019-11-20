@@ -8,6 +8,7 @@ import { Container } from './styles';
 
 export default function Weather() {
   const [dailyForecast, setDailyForecast] = useState([]);
+  const [selectedDayId, setSelectedDayId] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -23,7 +24,11 @@ export default function Weather() {
   return (
     <Container>
       <h1>Weather in Montréal</h1>
-      <DayList forecast={dailyForecast} />
+      <DayList
+        forecast={dailyForecast}
+        setSelectedDayId={setSelectedDayId}
+        selectedDayId={selectedDayId}
+      />
       <div>Day details</div>
     </Container>
   );

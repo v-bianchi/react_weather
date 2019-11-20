@@ -8,6 +8,9 @@ export const Container = styled.div`
   align-items: center;
   height: 100px;
   max-width: 80px;
+  padding: 8px;
+  border-radius: 10px;
+  background: ${props => (props.active ? '#bcd4de' : 'none')};
 `;
 
 export const Label = styled.p`

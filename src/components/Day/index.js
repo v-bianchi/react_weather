@@ -9,9 +9,12 @@ import {
   MaxTemp,
 } from './styles';
 
-export default function Day({ forecast }) {
+export default function Day({ forecast, setSelectedDayId, selectedDayId }) {
   return (
-    <Container>
+    <Container
+      onClick={() => setSelectedDayId(forecast.id)}
+      active={selectedDayId === forecast.id}
+    >
       <Label>{forecast.label}</Label>
       <Icon description={forecast.icon} />
       <Temperatures>
