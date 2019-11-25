@@ -6,6 +6,5 @@ TODO:
 - Add PropTypes
 - Create tests
 - Improve overall styling
-- Add feature to change location
 - Add error handling
 - Add favicon

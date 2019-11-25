@@ -10,6 +10,10 @@ export const Container = styled.div`
   height: 100vh;
   background: #fff;
 
+  h1 {
+    text-align: center;
+  }
+
   footer a {
     text-decoration: none;
     color: #5c9ead;
